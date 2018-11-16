@@ -1,0 +1,27 @@
+{
+  "name": "vue-country-region-dropdown",
+  "version": "1.0.0",
+  "description": "A country region selector built with Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syntacticsolutions/Vue-Country-Region-Dropdown.git"
+  },
+  "keywords": [
+    "vue",
+    "country",
+    "region",
+    "state",
+    "dropdown",
+    "selector"
+  ],
+  "author": "Miguel Coder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/syntacticsolutions/Vue-Country-Region-Dropdown/issues"
+  },
+  "homepage": "https://github.com/syntacticsolutions/Vue-Country-Region-Dropdown#readme"
+}

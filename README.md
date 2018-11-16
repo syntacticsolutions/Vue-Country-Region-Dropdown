@@ -12,7 +12,7 @@
 # Country Dropdown
 0. Usage:
 
-```html
+```vue
     <v-country-dropdown
         :blacklist="blacklist"
         placeholder="Select a Country"

@@ -13,11 +13,21 @@
 0. Usage:
 
 ```vue
+<template>
     <v-country-dropdown
         :blacklist="blacklist"
         placeholder="Select a Country"
         :value="billing_country"
-        v-model="billing_country" /> 
+        v-model="billing_country" />
+</template>
+<script>
+    export default {
+        data: () => ({
+            billing_country: 'US',
+            blacklist: ['A', 'AF', 'RU']
+        })
+    }
+</script>
 ```
 
 0. Props:
@@ -29,12 +39,22 @@
 # Region Dropdown
 0. Usage:
 
-```html
+```vue
+<template>
     <v-region-dropdown
         :country="billing_country"
         v-model="billing_state"
         :value="billing_state"
         placeholder="Select a Region"/>
+</template>
+<script>
+export default {
+    data: () => ({
+        billing_state: 'CA',
+        billing_country: 'US'
+    })
+}
+<script>
 ```
 
 0. Props:

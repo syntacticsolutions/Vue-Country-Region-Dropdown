@@ -27,11 +27,13 @@
 # Region Dropdown
 0. Usage:
 
-```<v-region-dropdown```
-    ```:country="billing_country"```
-    ```v-model="billing_state"``` 
-    ```:value="billing_state"```
-    ```placeholder="Select a Region"/>```
+<pre><code>
+    <v-region-dropdown
+        :country="billing_country"
+        v-model="billing_state"
+        :value="billing_state"
+        placeholder="Select a Region"/>
+</code></pre>
 
 0. Props:
 

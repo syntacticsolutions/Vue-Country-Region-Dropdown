@@ -28,11 +28,11 @@
 0. Usage:
 
 <pre><code>
-    <v-region-dropdown
+    ```<v-region-dropdown
         :country="billing_country"
         v-model="billing_state"
         :value="billing_state"
-        placeholder="Select a Region"/>
+        placeholder="Select a Region"/>```
 </code></pre>
 
 0. Props:

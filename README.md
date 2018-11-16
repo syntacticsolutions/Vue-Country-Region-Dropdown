@@ -12,11 +12,13 @@
 # Country Dropdown
 0. Usage:
 
-```<v-country-dropdown```
-        ```:blacklist="blacklist"```
-        ```placeholder="Select a Country"```
-        ```:value="billing_country"```
-        ```v-model="billing_country" /> ```
+```html
+    <v-country-dropdown
+        :blacklist="blacklist"
+        placeholder="Select a Country"
+        :value="billing_country"
+        v-model="billing_country" /> 
+```
 
 0. Props:
 
@@ -27,13 +29,13 @@
 # Region Dropdown
 0. Usage:
 
-<pre><code>
-    ```<v-region-dropdown
+```html
+    <v-region-dropdown
         :country="billing_country"
         v-model="billing_state"
         :value="billing_state"
-        placeholder="Select a Region"/>```
-</code></pre>
+        placeholder="Select a Region"/>
+```
 
 0. Props:
 

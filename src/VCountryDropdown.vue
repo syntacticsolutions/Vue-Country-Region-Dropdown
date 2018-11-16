@@ -1,11 +1,11 @@
 <template>
-    <Select
+    <select
         @change="$emit('change', $event)"
         @input="$emit('input', $event)"
         :placeholder="placeholder"
         :value="value">
-        <Option v-for="(name, slug) in countries" :key="slug" :value="name[1]">{{ name[0] }}</Option>
-    </Select>
+        <option v-for="(name, slug) in countries" :key="slug" :value="name[1]">{{ name[0] }}</option>
+    </select>
 </template>
 
 <script>
@@ -13,6 +13,7 @@
 import CountryRegionData from '../fixtures/countries.js'
 
 export default {
+    name: 'v-country-dropdown',
     props: ['whitelist', 'blacklist', 'placeholder', 'value'],
     data: () => ({
         countries: []

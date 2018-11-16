@@ -1,11 +1,11 @@
 <template>
-    <Select
+    <select
         @change="$emit('change', $event)"
         @input="$emit('input', $event)"
         :placeholder="placeholder"
         :value="value">
-        <Option v-for="(obj, slug) in regions" :key="slug" :value="obj.regionShortCode">{{ obj.regionName }}</Option>
-    </Select>
+        <option v-for="(obj, slug) in regions" :key="slug" :value="obj.regionShortCode">{{ obj.regionName }}</option>
+    </select>
 </template>
 
 <script>
@@ -19,6 +19,7 @@ const C = {
 }
 
 export default {
+    name: 'v-region-dropdown',
     props: ['country', 'placeholder', 'value'],
     computed: {
         regions () {
